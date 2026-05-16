@@ -1,0 +1,13 @@
+{
+  "itemGroup.lobotomycorp": "Example Mod Tab",
+  "block.lobotomycorp.example_block": "Example Block",
+  "item.lobotomycorp.example_item": "Example Item",
+
+  "lobotomycorp.configuration.title": "LobotomyCorp Configs",
+  "lobotomycorp.configuration.section.lobotomycorp.common.toml": "LobotomyCorp Configs",
+  "lobotomycorp.configuration.section.lobotomycorp.common.toml.title": "LobotomyCorp Configs",
+  "lobotomycorp.configuration.items": "Item List",
+  "lobotomycorp.configuration.logDirtBlock": "Log Dirt Block",
+  "lobotomycorp.configuration.magicNumberIntroduction": "Magic Number Text",
+  "lobotomycorp.configuration.magicNumber": "Magic Number"
+}

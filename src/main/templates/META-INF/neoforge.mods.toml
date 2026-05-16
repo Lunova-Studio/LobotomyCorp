@@ -1,0 +1,31 @@
+modLoader="javafml"
+
+# The loader version doesn't matter. Modify the NeoForge and/or Minecraft version ranges instead.
+loaderVersion="[0,)"
+license="${mod_license}"
+issueTrackerURL = "https://www.mcmod.cn/class/10717.html"
+
+[[mods]]
+    modId = "${mod_id}"
+    version = "${mod_version}"
+    displayName = "${mod_name}"
+    displayURL = "https://www.mcmod.cn/class/10717.html"
+    authors = "${mod_author}"
+    description = '''${mod_description}'''
+
+[[mixins]]
+    config="${mod_id}.mixins.json"
+
+[[dependencies."${mod_id}"]]
+    modId = "neoforge"
+    type = "required"
+    versionRange = "[${neo_version},)"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+    modId = "minecraft"
+    type = "required"
+    versionRange = "[${minecraft_version}]"
+    ordering = "NONE"
+    side = "BOTH"
