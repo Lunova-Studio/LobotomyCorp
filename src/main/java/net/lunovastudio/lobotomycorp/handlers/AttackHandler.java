@@ -42,10 +42,16 @@ public class AttackHandler {
                 LobotomyCorp.LOGGER.debug("item is {}, original damage is {}, new damage is {}, damage type is {}",
                         itemStack.getDisplayName().getString(), event.getOriginalDamage(), damage.damageValue(), damage.damageType());
 
-                if (targetEntity.hasData(ModAttachments.PSYCHOLOGICAL) &&
+                if (targetEntity.hasData(ModAttachments.PSYCHOLOGICAL.get()) &&
                         damage.damageType() == EgoDamageType.WHITE) {
                     event.setNewDamage(0.0f);
-                    LobotomyCorp.LOGGER.debug("fuck PSYCHOLOGICAL");
+
+                    //TODO: 回复理智
+                    int newDamage = targetEntity.getData(ModAttachments.PSYCHOLOGICAL.get())
+                            .psychological() - (int) damage.damageValue();
+                    int newDamageBounds = Math.clamp(newDamage, 0, 20);
+
+                    targetEntity.setData(ModAttachments.PSYCHOLOGICAL.get(), new PsychologicalData(newDamageBounds));
                 } else {
                     event.setNewDamage(damage.damageValue());
                 }
