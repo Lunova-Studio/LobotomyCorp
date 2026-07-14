@@ -1,5 +1,10 @@
 {
   "itemGroup.lc_tab": "脑叶公司",
 
-  "item.lobotomycorp.lc_item_penitence": "忏悔"
+  "item.lobotomycorp.lc_item_penitence": "忏悔",
+  "item.lobotomycorp.lc_item_wingbeat": "翅振",
+
+  "item.lobotomycorp.lc_item_regret": "悔恨",
+  "item.lobotomycorp.lc_item_somewherespear": "彼方的裂片",
+  "item.lobotomycorp.lc_item_horn": "犄角"
 }

@@ -1,6 +1,9 @@
 {
   "itemGroup.lc_tab": "LobotomyCorp",
 
-  "item.lobotomycorp.lc_item_wingbeat": "Wingbeat",
-  "item.lobotomycorp.lc_item_penitence": "Penitence"
+  "item.lobotomycorp.lc_item_wingbeat": "Wing Beat",
+  "item.lobotomycorp.lc_item_penitence": "Penitence",
+  "item.lobotomycorp.lc_item_regret": "Regret",
+  "item.lobotomycorp.lc_item_somewherespear": "Somewhere Spear",
+  "item.lobotomycorp.lc_item_horn": "Horn"
 }

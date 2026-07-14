@@ -5,7 +5,9 @@ import net.lunovastudio.lobotomycorp.enums.EgoDamageType;
 import net.lunovastudio.lobotomycorp.enums.EgoTiers;
 import net.lunovastudio.lobotomycorp.items.ego.EgoItem;
 import net.lunovastudio.lobotomycorp.items.ego.EgoTier;
+import net.lunovastudio.lobotomycorp.items.ego.hammer.HammerItem;
 import net.lunovastudio.lobotomycorp.items.ego.mace.MaceItem;
+import net.lunovastudio.lobotomycorp.items.ego.spear.SpearItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Tiers;
 import net.neoforged.bus.api.IEventBus;
@@ -22,6 +24,19 @@ public class ModItems {
 
     public static final DeferredItem<MaceItem> EGO_WINGBEAT =
             EGO.register("lc_item_wingbeat", () -> new MaceItem(EgoTiers.ZAYIN, EgoDamageType.RED,
+                    new Item.Properties().attributes(EgoItem.createAttributes(-2.0d, 6d))));
+
+
+    public static final DeferredItem<HammerItem> EGO_REGRET =
+            EGO.register("lc_item_regret", () -> new HammerItem(EgoTiers.TETH, EgoDamageType.RED,
+                    new Item.Properties().attributes(EgoItem.createAttributes(-2.0d, 6d))));
+
+    public static final DeferredItem<SpearItem> EGO_HORN =
+            EGO.register("lc_item_horn", () -> new SpearItem(EgoTiers.TETH, EgoDamageType.RED,
+                    new Item.Properties().attributes(EgoItem.createAttributes(-2.0d, 6d))));
+
+    public static final DeferredItem<SpearItem> EGO_SOMEWHERESPEAR =
+            EGO.register("lc_item_somewherespear", () -> new SpearItem(EgoTiers.TETH, EgoDamageType.BLACK,
                     new Item.Properties().attributes(EgoItem.createAttributes(-2.0d, 6d))));
 
     public static void register(IEventBus bus) {
