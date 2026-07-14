@@ -6,16 +6,11 @@ import net.lunovastudio.lobotomycorp.attachments.datas.PsychologicalData;
 import net.lunovastudio.lobotomycorp.enums.EgoDamageType;
 import net.lunovastudio.lobotomycorp.items.ego.EgoItem;
 import net.lunovastudio.lobotomycorp.utils.DamageUtils;
-import net.minecraft.client.Minecraft;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.phys.EntityHitResult;
-import net.minecraft.world.phys.HitResult;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 
 @EventBusSubscriber(modid = LobotomyCorp.MODID)
@@ -42,9 +37,11 @@ public class AttackHandler {
                 LobotomyCorp.LOGGER.debug("item is {}, original damage is {}, new damage is {}, damage type is {}",
                         itemStack.getDisplayName().getString(), event.getOriginalDamage(), damage.damageValue(), damage.damageType());
 
-                if (targetEntity.hasData(ModAttachments.PSYCHOLOGICAL.get()) &&
-                        damage.damageType() == EgoDamageType.WHITE) {
-                    event.setNewDamage(0.0f);
+                if (targetEntity.hasData(ModAttachments.PSYCHOLOGICAL.get())&&
+                (damage.damageType() == EgoDamageType.WHITE))
+                {
+                    //LobotomyCorp.LOGGER.debug("{}", targetEntity.getName().getString());
+                    LobotomyCorp.LOGGER.debug("{}", targetEntity.hasData(ModAttachments.PSYCHOLOGICAL.get()));
 
                     //TODO: 回复理智
                     int newDamage = targetEntity.getData(ModAttachments.PSYCHOLOGICAL.get())
@@ -52,7 +49,9 @@ public class AttackHandler {
                     int newDamageBounds = Math.clamp(newDamage, 0, 20);
 
                     targetEntity.setData(ModAttachments.PSYCHOLOGICAL.get(), new PsychologicalData(newDamageBounds));
-                } else {
+                    event.setNewDamage(0);
+                }
+                else {
                     event.setNewDamage(damage.damageValue());
                 }
             }

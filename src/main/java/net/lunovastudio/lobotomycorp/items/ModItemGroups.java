@@ -21,6 +21,10 @@ public class ModItemGroups {
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.EGO_PENITENCE.get());
                         output.accept(ModItems.EGO_WINGBEAT.get());
+
+                        output.accept(ModItems.EGO_REGRET.get());
+                        output.accept(ModItems.EGO_SOMEWHERESPEAR.get());
+                        output.accept(ModItems.EGO_HORN.get());
                     }).build());
 
     public static void register(IEventBus bus) {

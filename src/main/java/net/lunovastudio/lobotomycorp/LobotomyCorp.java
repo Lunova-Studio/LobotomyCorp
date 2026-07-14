@@ -4,6 +4,7 @@ import net.lunovastudio.lobotomycorp.attachments.ModAttachments;
 import net.lunovastudio.lobotomycorp.commands.PsychologicalCommand;
 import net.lunovastudio.lobotomycorp.items.ModItemGroups;
 import net.lunovastudio.lobotomycorp.items.ModItems;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import org.slf4j.Logger;
 
@@ -12,7 +13,6 @@ import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
@@ -22,11 +22,9 @@ public class LobotomyCorp {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public LobotomyCorp(IEventBus bus) {
-
         ModItems.register(bus);
         ModItemGroups.register(bus);
         ModAttachments.register(bus);
-
         NeoForge.EVENT_BUS.addListener(this::registerCommands);
         NeoForge.EVENT_BUS.register(this);
     }
