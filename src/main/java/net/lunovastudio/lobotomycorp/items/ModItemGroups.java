@@ -25,6 +25,8 @@ public class ModItemGroups {
                         output.accept(ModItems.EGO_REGRET.get());
                         output.accept(ModItems.EGO_SOMEWHERESPEAR.get());
                         output.accept(ModItems.EGO_HORN.get());
+                        output.accept(ModItems.EGO_CHRISTMAS.get());
+                        output.accept(ModItems.EGO_LANTERN.get());
                     }).build());
 
     public static void register(IEventBus bus) {

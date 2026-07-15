@@ -27,6 +27,7 @@ public class ModItems {
                     new Item.Properties().attributes(EgoItem.createAttributes(-2.0d, 6d))));
 
 
+
     public static final DeferredItem<HammerItem> EGO_REGRET =
             EGO.register("lc_item_regret", () -> new HammerItem(EgoTiers.TETH, EgoDamageType.RED,
                     new Item.Properties().attributes(EgoItem.createAttributes(-2.0d, 6d))));
@@ -38,6 +39,16 @@ public class ModItems {
     public static final DeferredItem<SpearItem> EGO_SOMEWHERESPEAR =
             EGO.register("lc_item_somewherespear", () -> new SpearItem(EgoTiers.TETH, EgoDamageType.BLACK,
                     new Item.Properties().attributes(EgoItem.createAttributes(-2.0d, 6d))));
+
+    public static final DeferredItem<HammerItem> EGO_LANTERN =
+            EGO.register("lc_item_lantern", () -> new HammerItem(EgoTiers.TETH, EgoDamageType.BLACK,
+                    new Item.Properties().attributes(EgoItem.createAttributes(-2.0d, 6d))));
+
+    public static final DeferredItem<MaceItem> EGO_CHRISTMAS =
+            EGO.register("lc_item_christmas", () -> new MaceItem(EgoTiers.HE, EgoDamageType.WHITE,
+                    new Item.Properties().attributes(EgoItem.createAttributes(-2.0d, 6d))));
+
+
 
     public static void register(IEventBus bus) {
         EGO.register(bus);
