@@ -1,6 +1,6 @@
-package net.lunovastudio.lobotomycorp.items.ego.mace;
+package net.lunovastudio.lobotomycorp.items.ego.weapon.mace;
 
-import net.lunovastudio.lobotomycorp.enums.EgoDamageType;
+import net.lunovastudio.lobotomycorp.enums.ego.EgoDamageType;
 import net.lunovastudio.lobotomycorp.items.ego.EgoItem;
 import net.lunovastudio.lobotomycorp.items.ego.EgoTier;
 

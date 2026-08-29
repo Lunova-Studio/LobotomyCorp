@@ -3,7 +3,7 @@ package net.lunovastudio.lobotomycorp.handlers;
 import net.lunovastudio.lobotomycorp.LobotomyCorp;
 import net.lunovastudio.lobotomycorp.attachments.ModAttachments;
 import net.lunovastudio.lobotomycorp.attachments.datas.PsychologicalData;
-import net.lunovastudio.lobotomycorp.enums.EgoDamageType;
+import net.lunovastudio.lobotomycorp.enums.ego.EgoDamageType;
 import net.lunovastudio.lobotomycorp.items.ego.EgoItem;
 import net.lunovastudio.lobotomycorp.utils.DamageUtils;
 import net.minecraft.world.entity.LivingEntity;

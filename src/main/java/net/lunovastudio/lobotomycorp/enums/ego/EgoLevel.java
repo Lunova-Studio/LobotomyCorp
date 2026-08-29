@@ -1,4 +1,4 @@
-package net.lunovastudio.lobotomycorp.enums;
+package net.lunovastudio.lobotomycorp.enums.ego;
 
 /**
  * E.G.O 装备等级枚举

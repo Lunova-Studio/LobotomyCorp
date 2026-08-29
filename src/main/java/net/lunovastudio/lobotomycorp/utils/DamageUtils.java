@@ -1,7 +1,6 @@
 package net.lunovastudio.lobotomycorp.utils;
 
-import net.lunovastudio.lobotomycorp.enums.EgoDamageType;
-import net.lunovastudio.lobotomycorp.enums.EgoLevel;
+import net.lunovastudio.lobotomycorp.enums.ego.EgoDamageType;
 import net.lunovastudio.lobotomycorp.items.ego.DamageValue;
 import net.lunovastudio.lobotomycorp.items.ego.EgoTier;
 

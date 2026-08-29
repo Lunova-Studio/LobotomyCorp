@@ -18,7 +18,7 @@ import net.neoforged.neoforge.client.gui.VanillaGuiLayers;
 
 @EventBusSubscriber(modid = LobotomyCorp.MODID, value = Dist.CLIENT)
 public class PsychologicalOverlayRenderer {
-    public static ResourceLocation THIRST_ICONS =
+    private static final ResourceLocation PSYCHOLOGICAL_ICONS =
             ResourceLocation.fromNamespaceAndPath(LobotomyCorp.MODID, "textures/gui/icons.png");
 
     private static int updateCounter;
@@ -27,39 +27,27 @@ public class PsychologicalOverlayRenderer {
 
     private static final Minecraft minecraft = Minecraft.getInstance();
 
-    /**
-     * 在客户端 Tick 结束时更新计数器（替代 gui.getGuiTicks()）psychological
-     */
+
     @SubscribeEvent
     public static void onClientTick(ClientTickEvent.Post event) {
-        if (!minecraft.isPaused()) {
+        if (!minecraft.isPaused())
             updateCounter++;
-        }
     }
 
-    /**
-     * 注册 HUD 层
-     */
     @SubscribeEvent
-    public static void registerThirstOverlay(RegisterGuiLayersEvent event) {
+    public static void registerPsychologicalOverlay(RegisterGuiLayersEvent event) {
         event.registerAbove(
                 VanillaGuiLayers.AIR_LEVEL,
                 ResourceLocation.fromNamespaceAndPath(LobotomyCorp.MODID, "psychological_id"),
-                (guiGraphics, deltaTracker) -> {
-                    onRenderPsychological(guiGraphics);
-                }
-        );
+                (guiGraphics, deltaTracker) -> onRenderPsychological(guiGraphics));
     }
 
-    /**
-     * 渲染逻辑
-     */
     private static void onRenderPsychological(GuiGraphics guiGraphics) {
         if (minecraft.player == null) return;
 
         // 骑乘生物时隐藏
         boolean isMounted = minecraft.player.getVehicle() instanceof LivingEntity;
-        if (isMounted || minecraft.options.hideGui || !minecraft.gameMode.getPlayerMode().isSurvival())
+        if (minecraft.gameMode != null && (isMounted || minecraft.options.hideGui || !minecraft.gameMode.getPlayerMode().isSurvival()))
             return;
 
         PsychologicalData psychologicalData = minecraft.player.getData(ModAttachments.PSYCHOLOGICAL.get());
@@ -67,7 +55,6 @@ public class PsychologicalOverlayRenderer {
         int screenWidth = guiGraphics.guiWidth();
         int screenHeight = guiGraphics.guiHeight();
 
-        // 计算位置（右侧状态栏区域）
         int left = screenWidth / 2 + 91;
         int top = screenHeight - minecraft.gui.rightHeight;
 
@@ -82,13 +69,12 @@ public class PsychologicalOverlayRenderer {
                 y = top + (random.nextInt(3) - 1);
             }
 
-            guiGraphics.blit(THIRST_ICONS, x, y, 22, 0, 10, 9);
+            guiGraphics.blit(PSYCHOLOGICAL_ICONS, x, y, 22, 0, 10, 9);
 
-            if (idx < level) {
-                guiGraphics.blit(THIRST_ICONS, x, y, 0, 0, 10, 9);
-            } else if (idx == level) {
-                guiGraphics.blit(THIRST_ICONS, x, y, 11, 0, 10, 9);
-            }
+            if (idx < level)
+                guiGraphics.blit(PSYCHOLOGICAL_ICONS, x, y, 0, 0, 10, 9);
+            else if (idx == level)
+                guiGraphics.blit(PSYCHOLOGICAL_ICONS, x, y, 11, 0, 10, 9);
         }
 
         minecraft.gui.rightHeight += 10;

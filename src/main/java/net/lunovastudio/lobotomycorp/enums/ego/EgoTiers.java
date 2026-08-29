@@ -1,4 +1,4 @@
-package net.lunovastudio.lobotomycorp.enums;
+package net.lunovastudio.lobotomycorp.enums.ego;
 
 import net.lunovastudio.lobotomycorp.items.ego.EgoTier;
 import net.minecraft.world.item.Items;

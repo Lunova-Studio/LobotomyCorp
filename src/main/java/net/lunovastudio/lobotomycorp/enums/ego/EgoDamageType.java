@@ -1,4 +1,4 @@
-package net.lunovastudio.lobotomycorp.enums;
+package net.lunovastudio.lobotomycorp.enums.ego;
 
 public enum EgoDamageType {
     /**

@@ -1,8 +1,8 @@
 package net.lunovastudio.lobotomycorp.items.ego;
 
 import net.lunovastudio.lobotomycorp.LobotomyCorp;
-import net.lunovastudio.lobotomycorp.enums.EgoDamageType;
-import net.lunovastudio.lobotomycorp.enums.EgoTiers;
+import net.lunovastudio.lobotomycorp.enums.ego.EgoDamageType;
+import net.lunovastudio.lobotomycorp.enums.ego.EgoTiers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;

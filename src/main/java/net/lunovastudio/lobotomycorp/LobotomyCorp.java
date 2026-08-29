@@ -4,7 +4,6 @@ import net.lunovastudio.lobotomycorp.attachments.ModAttachments;
 import net.lunovastudio.lobotomycorp.commands.PsychologicalCommand;
 import net.lunovastudio.lobotomycorp.items.ModItemGroups;
 import net.lunovastudio.lobotomycorp.items.ModItems;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import org.slf4j.Logger;
 
@@ -25,13 +24,13 @@ public class LobotomyCorp {
         ModItems.register(bus);
         ModItemGroups.register(bus);
         ModAttachments.register(bus);
+
         NeoForge.EVENT_BUS.addListener(this::registerCommands);
         NeoForge.EVENT_BUS.register(this);
     }
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-        // Do something when the server starts
         LOGGER.info("HELLO from server starting");
     }
 

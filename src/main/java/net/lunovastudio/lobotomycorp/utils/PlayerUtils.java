@@ -1,6 +1,6 @@
 package net.lunovastudio.lobotomycorp.utils;
 
-import net.lunovastudio.lobotomycorp.enums.EgoDamageType;
+import net.lunovastudio.lobotomycorp.enums.ego.EgoDamageType;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ItemStack;

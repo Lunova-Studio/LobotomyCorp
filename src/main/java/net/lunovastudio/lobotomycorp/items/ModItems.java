@@ -1,15 +1,13 @@
 package net.lunovastudio.lobotomycorp.items;
 
 import net.lunovastudio.lobotomycorp.LobotomyCorp;
-import net.lunovastudio.lobotomycorp.enums.EgoDamageType;
-import net.lunovastudio.lobotomycorp.enums.EgoTiers;
+import net.lunovastudio.lobotomycorp.enums.ego.EgoDamageType;
+import net.lunovastudio.lobotomycorp.enums.ego.EgoTiers;
 import net.lunovastudio.lobotomycorp.items.ego.EgoItem;
-import net.lunovastudio.lobotomycorp.items.ego.EgoTier;
-import net.lunovastudio.lobotomycorp.items.ego.hammer.HammerItem;
-import net.lunovastudio.lobotomycorp.items.ego.mace.MaceItem;
-import net.lunovastudio.lobotomycorp.items.ego.spear.SpearItem;
+import net.lunovastudio.lobotomycorp.items.ego.weapon.hammer.HammerItem;
+import net.lunovastudio.lobotomycorp.items.ego.weapon.mace.MaceItem;
+import net.lunovastudio.lobotomycorp.items.ego.weapon.spear.SpearItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;

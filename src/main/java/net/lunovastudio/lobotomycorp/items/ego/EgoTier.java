@@ -1,9 +1,6 @@
 package net.lunovastudio.lobotomycorp.items.ego;
 
-import net.lunovastudio.lobotomycorp.enums.EgoDamageType;
 import net.minecraft.world.item.crafting.Ingredient;
-
-import java.util.Random;
 
 public interface EgoTier {
     /**
