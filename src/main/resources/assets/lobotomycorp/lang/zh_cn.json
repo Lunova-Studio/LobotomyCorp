@@ -8,5 +8,10 @@
   "item.lobotomycorp.lc_item_somewherespear": "彼方的裂片",
   "item.lobotomycorp.lc_item_horn": "犄角",
   "item.lobotomycorp.lc_item_christmas": "悲惨圣诞",
-  "item.lobotomycorp.lc_item_lantern": "诱捕幻灯"
+  "item.lobotomycorp.lc_item_lantern": "诱捕幻灯",
+
+  "item.lobotomycorp.lc_armor_test": "测试E.G.O护甲",
+  "item.lobotomycorp.test_abnormality_spawn_egg": "测试异想体刷怪蛋",
+
+  "entity.lobotomycorp.test_abnormality": "测试异想体"
 }

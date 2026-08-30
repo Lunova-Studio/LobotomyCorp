@@ -3,7 +3,11 @@
   "package": "net.lunovastudio.lobotomycorp.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "LivingEntityMixin"
+    "TextDisplayAccessor",
+    "InventoryMenuMixin"
+  ],
+  "client": [
+    "HumanoidArmorLayerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

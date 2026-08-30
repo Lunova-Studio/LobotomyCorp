@@ -8,5 +8,10 @@
   "item.lobotomycorp.lc_item_somewherespear": "Somewhere Spear",
   "item.lobotomycorp.lc_item_horn": "Horn",
   "item.lobotomycorp.lc_item_christmas": "Christmas",
-  "item.lobotomycorp.lc_item_lantern": "Lantern"
+  "item.lobotomycorp.lc_item_lantern": "Lantern",
+
+  "item.lobotomycorp.lc_armor_test": "Test E.G.O Armor",
+  "item.lobotomycorp.test_abnormality_spawn_egg": "Test Abnormality Spawn Egg",
+
+  "entity.lobotomycorp.test_abnormality": "Test Abnormality"
 }

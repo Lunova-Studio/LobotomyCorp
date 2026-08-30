@@ -3,6 +3,7 @@ package net.lunovastudio.lobotomycorp.attachments;
 import net.lunovastudio.lobotomycorp.LobotomyCorp;
 import net.lunovastudio.lobotomycorp.attachments.datas.PsychologicalData;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -23,6 +24,18 @@ public class ModAttachments {
                     () -> AttachmentType.builder(() -> new PsychologicalData(PsychologicalData.MAX_PSYCHOLOGICAL))
                             .sync(PsychologicalData.STREAM_CODEC)
                             .serialize(PsychologicalData.CODEC)
+                            .build()
+            );
+
+    /**
+     * 自定义护甲槽位中的护甲。服务端 {@code setData} 后自动同步到客户端。
+     */
+    public static final Supplier<AttachmentType<ItemStack>> EGO_ARMOR =
+            ATTACHMENT_TYPES.register("ego_armor",
+                    () -> AttachmentType.builder(() -> ItemStack.EMPTY)
+                            .sync(ItemStack.OPTIONAL_STREAM_CODEC)
+                            .serialize(ItemStack.OPTIONAL_CODEC)
+                            .copyOnDeath()
                             .build()
             );
 
