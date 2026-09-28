@@ -1,4 +1,4 @@
-package net.lunovastudio.lobotomycorp.attachments.datas;
+package net.lunovastudio.lobotomycorp.common.attachments.datas;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
@@ -23,15 +23,14 @@ public record PsychologicalData(int psychological) {
     }
 
     public static final Codec<PsychologicalData> CODEC = RecordCodecBuilder.create(instance ->
-            instance.group(
-                    ExtraCodecs.NON_NEGATIVE_INT.fieldOf("psychological").forGetter(PsychologicalData::psychological)
-            ).apply(instance, PsychologicalData::new)
-
+        instance.group(
+            ExtraCodecs.NON_NEGATIVE_INT.fieldOf("psychological").forGetter(PsychologicalData::psychological)
+        ).apply(instance, PsychologicalData::new)
     );
 
     public static final StreamCodec<ByteBuf, PsychologicalData> STREAM_CODEC = StreamCodec.composite(
-            ByteBufCodecs.VAR_INT,
-            PsychologicalData::psychological,
-            PsychologicalData::new
+        ByteBufCodecs.VAR_INT,
+        PsychologicalData::psychological,
+        PsychologicalData::new
     );
 }
