@@ -1,6 +1,11 @@
 {
   "itemGroup.lc_tab": "脑叶公司",
 
+  "lobotomycorp.attribute.min_ego_damage": "最小基础伤害",
+  "lobotomycorp.attribute.max_ego_damage": "最大基础伤害",
+
+  "tooltip.lobotomycorp.ego_weapon.damage": "伤害区间",
+
   "item.lobotomycorp.lc_item_penitence": "忏悔",
   "item.lobotomycorp.lc_item_wingbeat": "翅振",
 

@@ -1,6 +1,11 @@
 {
   "itemGroup.lc_tab": "LobotomyCorp",
 
+  "lobotomycorp.attribute.min_ego_damage": "Min Base Damage",
+  "lobotomycorp.attribute.max_ego_damage": "Max Base Damage",
+
+  "tooltip.lobotomycorp.ego_weapon.damage": "伤害区间",
+
   "item.lobotomycorp.lc_item_wingbeat": "Wing Beat",
   "item.lobotomycorp.lc_item_penitence": "Penitence",
 

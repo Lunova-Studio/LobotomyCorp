@@ -1,10 +1,11 @@
 {
   "required": true,
-  "package": "net.lunovastudio.lobotomycorp.mixin",
+  "package": "net.lunovastudio.lobotomycorp.client.gui.mixins",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
   ],
   "client": [
+    "GuiGraphicsMixin"
   ],
   "injectors": {
     "defaultRequire": 1

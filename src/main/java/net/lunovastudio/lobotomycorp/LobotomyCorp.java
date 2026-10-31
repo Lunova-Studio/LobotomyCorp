@@ -2,6 +2,7 @@ package net.lunovastudio.lobotomycorp;
 
 import net.lunovastudio.lobotomycorp.common.attachments.ModAttachments;
 import net.lunovastudio.lobotomycorp.common.attributes.ModAttributes;
+import net.lunovastudio.lobotomycorp.common.items.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -18,8 +19,9 @@ public class LobotomyCorp {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public LobotomyCorp(IEventBus bus) {
-        ModAttachments.register(bus);
+        ModItems.register(bus);
         ModAttributes.register(bus);
+        ModAttachments.register(bus);
 
         NeoForge.EVENT_BUS.register(this);
     }

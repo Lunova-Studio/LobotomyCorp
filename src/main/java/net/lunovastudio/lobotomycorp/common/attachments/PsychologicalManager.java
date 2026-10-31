@@ -3,6 +3,8 @@ package net.lunovastudio.lobotomycorp.common.attachments;
 import net.lunovastudio.lobotomycorp.LobotomyCorp;
 import net.lunovastudio.lobotomycorp.common.attachments.datas.PsychologicalData;
 import net.lunovastudio.lobotomycorp.common.attributes.ModAttributes;
+import net.minecraft.client.Minecraft;
+import net.minecraft.world.entity.PowerableMob;
 import net.minecraft.world.entity.player.Player;
 import net.neoforged.bus.api.SubscribeEvent;
 
