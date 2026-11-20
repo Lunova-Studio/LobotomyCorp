@@ -5,9 +5,9 @@
       "width": 128,
       "height": 128,
       "border": {
-        "left": 32,
+        "left": 42,
         "top": 18,
-        "right": 32,
+        "right": 42,
         "bottom": 8
       }
     }

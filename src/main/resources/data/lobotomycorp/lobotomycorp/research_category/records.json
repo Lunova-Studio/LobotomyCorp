@@ -1,0 +1,14 @@
+{
+  "name": "department.lobotomycorp.records",
+  "description": "department.lobotomycorp.records.description",
+  "icon": "lobotomycorp:textures/gui/departments/records.png",
+  "color": "FFD3D3D3",
+  "index": 9,
+  "required_employee_grade": 2,
+  "default_access_level": 0,
+  "tree_x": 0.18,
+  "tree_y": 0.67,
+  "tree_connections": [
+    "lobotomycorp:architecture"
+  ]
+}

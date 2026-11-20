@@ -1,0 +1,14 @@
+{
+  "name": "department.lobotomycorp.welfare",
+  "description": "department.lobotomycorp.welfare.description",
+  "icon": "lobotomycorp:textures/gui/departments/welfare.png",
+  "color": "FF1E90FF",
+  "index": 7,
+  "required_employee_grade": 2,
+  "default_access_level": 0,
+  "tree_x": 0.18,
+  "tree_y": 0.45,
+  "tree_connections": [
+    "lobotomycorp:records"
+  ]
+}

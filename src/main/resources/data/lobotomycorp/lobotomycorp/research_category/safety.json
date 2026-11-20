@@ -1,0 +1,14 @@
+{
+  "name": "department.lobotomycorp.safety",
+  "description": "department.lobotomycorp.safety.description",
+  "icon": "lobotomycorp:textures/gui/departments/safety.png",
+  "color": "FF7CFC00",
+  "index": 3,
+  "required_employee_grade": 2,
+  "default_access_level": 0,
+  "tree_x": 0.18,
+  "tree_y": 0.23,
+  "tree_connections": [
+    "lobotomycorp:welfare"
+  ]
+}

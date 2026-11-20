@@ -1,0 +1,16 @@
+{
+  "name": "department.lobotomycorp.information",
+  "description": "department.lobotomycorp.information.description",
+  "icon": "lobotomycorp:textures/gui/departments/information.png",
+  "color": "FFB36BFF",
+  "index": 2,
+  "required_employee_grade": 1,
+  "default_access_level": 1,
+  "tree_x": 0.5,
+  "tree_y": 0.23,
+  "tree_connections": [
+    "lobotomycorp:central",
+    "lobotomycorp:safety",
+    "lobotomycorp:training"
+  ]
+}

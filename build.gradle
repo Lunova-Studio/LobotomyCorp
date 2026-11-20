@@ -20,6 +20,18 @@ sourceSets.main.resources {
 }
 
 repositories {
+    exclusiveContent {
+        forRepository {
+            mavenCentral()
+        }
+        filter {
+            includeGroup 'org.junit'
+            includeGroup 'org.junit.jupiter'
+            includeGroup 'org.junit.platform'
+            includeGroup 'org.opentest4j'
+            includeGroup 'org.apiguardian'
+        }
+    }
 }
 
 base {
@@ -79,6 +91,21 @@ configurations {
 }
 
 dependencies {
+    testImplementation platform('org.junit:junit-bom:5.11.4')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('compileTestJava', JavaCompile).configure {
+    classpath += files(configurations.compileClasspath)
+}
+
+tasks.withType(Test).configureEach {
+    useJUnitPlatform()
+    // 单元测试直接跑在普通 JVM 上：把主源码的编译类路径（含 Minecraft/NeoForge 与依赖库）并入测试运行时，
+    // 这样不需要 NeoForge 的 junit-fml 运行时扩展。
+    classpath += files(configurations.compileClasspath)
+    systemProperty 'lobotomycorp.testResourceRoot', file('src/main/resources').absolutePath
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

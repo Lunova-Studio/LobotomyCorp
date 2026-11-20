@@ -1,0 +1,19 @@
+{
+  "category": "lobotomycorp:control",
+  "name": "research.lobotomycorp.control_test_1.title",
+  "parents": [],
+  "column": 0,
+  "row": 101,
+  "meta": [],
+  "icons": [
+    "lobotomycorp:textures/gui/projects/task.png"
+  ],
+  "stages": [
+    {
+      "text": "research.lobotomycorp.control_test_1.stage_0",
+      "required_research": [
+        "lobotomycorp:abnormality_observation"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "department.lobotomycorp.central",
+  "description": "department.lobotomycorp.central.description",
+  "icon": "lobotomycorp:textures/gui/departments/central.png",
+  "color": "FFB8860B",
+  "index": 5,
+  "required_employee_grade": 3,
+  "default_access_level": 0,
+  "tree_x": 0.5,
+  "tree_y": 0.45,
+  "tree_connections": [
+    "lobotomycorp:welfare",
+    "lobotomycorp:disciplinary"
+  ]
+}

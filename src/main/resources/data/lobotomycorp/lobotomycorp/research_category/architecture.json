@@ -1,0 +1,12 @@
+{
+  "name": "department.lobotomycorp.architecture",
+  "description": "department.lobotomycorp.architecture.description",
+  "icon": "lobotomycorp:textures/gui/departments/architecture.png",
+  "color": "FFFFFFFF",
+  "index": 10,
+  "required_employee_grade": 3,
+  "default_access_level": 0,
+  "tree_x": 0.5,
+  "tree_y": 0.89,
+  "tree_connections": []
+}

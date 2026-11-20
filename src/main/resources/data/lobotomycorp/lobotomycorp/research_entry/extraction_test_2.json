@@ -1,0 +1,19 @@
+{
+  "category": "lobotomycorp:extraction",
+  "name": "research.lobotomycorp.extraction_test_2.title",
+  "parents": [],
+  "column": 0,
+  "row": 102,
+  "meta": [],
+  "icons": [
+    "lobotomycorp:textures/gui/projects/task.png"
+  ],
+  "stages": [
+    {
+      "text": "research.lobotomycorp.extraction_test_2.stage_0",
+      "required_research": [
+        "lobotomycorp:abnormality_observation"
+      ]
+    }
+  ]
+}

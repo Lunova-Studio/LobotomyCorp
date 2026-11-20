@@ -1,0 +1,21 @@
+{
+  "category": "lobotomycorp:extraction",
+  "name": "research.lobotomycorp.ego_weapon_development.title",
+  "parents": [
+    "lobotomycorp:material_analysis"
+  ],
+  "column": 0,
+  "row": 3,
+  "meta": [],
+  "icons": [
+    "lobotomycorp:textures/gui/projects/verification.png"
+  ],
+  "stages": [
+    {
+      "text": "research.lobotomycorp.ego_weapon_development.stage_0"
+    }
+  ],
+  "unlocks_recipes": [
+    "lobotomycorp:ego_weapon_penitence"
+  ]
+}

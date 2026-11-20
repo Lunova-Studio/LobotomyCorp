@@ -1,0 +1,14 @@
+{
+  "name": "department.lobotomycorp.training",
+  "description": "department.lobotomycorp.training.description",
+  "icon": "lobotomycorp:textures/gui/departments/training.png",
+  "color": "FF8B4513",
+  "index": 4,
+  "required_employee_grade": 2,
+  "default_access_level": 0,
+  "tree_x": 0.82,
+  "tree_y": 0.23,
+  "tree_connections": [
+    "lobotomycorp:disciplinary"
+  ]
+}

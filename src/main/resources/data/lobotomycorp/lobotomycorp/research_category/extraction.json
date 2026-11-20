@@ -1,0 +1,14 @@
+{
+  "name": "department.lobotomycorp.extraction",
+  "description": "department.lobotomycorp.extraction.description",
+  "icon": "lobotomycorp:textures/gui/departments/extraction.png",
+  "color": "FF696969",
+  "index": 8,
+  "required_employee_grade": 2,
+  "default_access_level": 0,
+  "tree_x": 0.82,
+  "tree_y": 0.67,
+  "tree_connections": [
+    "lobotomycorp:architecture"
+  ]
+}

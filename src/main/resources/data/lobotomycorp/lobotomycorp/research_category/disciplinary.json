@@ -1,0 +1,14 @@
+{
+  "name": "department.lobotomycorp.disciplinary",
+  "description": "department.lobotomycorp.disciplinary.description",
+  "icon": "lobotomycorp:textures/gui/departments/disciplinary.png",
+  "color": "FFFF3B30",
+  "index": 6,
+  "required_employee_grade": 2,
+  "default_access_level": 0,
+  "tree_x": 0.82,
+  "tree_y": 0.45,
+  "tree_connections": [
+    "lobotomycorp:extraction"
+  ]
+}

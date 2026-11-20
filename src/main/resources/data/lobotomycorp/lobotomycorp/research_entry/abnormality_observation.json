@@ -1,0 +1,16 @@
+{
+  "category": "lobotomycorp:information",
+  "name": "research.lobotomycorp.abnormality_observation.title",
+  "parents": [],
+  "column": 0,
+  "row": 1,
+  "meta": [],
+  "icons": [
+    "lobotomycorp:textures/gui/projects/observation.png"
+  ],
+  "stages": [
+    {
+      "text": "research.lobotomycorp.abnormality_observation.stage_0"
+    }
+  ]
+}

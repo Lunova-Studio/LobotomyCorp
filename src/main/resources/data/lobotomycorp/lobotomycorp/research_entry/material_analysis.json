@@ -1,0 +1,26 @@
+{
+  "category": "lobotomycorp:extraction",
+  "name": "research.lobotomycorp.material_analysis.title",
+  "parents": [
+    "lobotomycorp:abnormality_observation"
+  ],
+  "column": 0,
+  "row": 2,
+  "meta": [],
+  "icons": [
+    "lobotomycorp:textures/gui/projects/analysis.png"
+  ],
+  "stages": [
+    {
+      "text": "research.lobotomycorp.material_analysis.stage_0",
+      "obtain": [
+        {
+          "items": [
+            "minecraft:iron_ingot"
+          ],
+          "amount": 3
+        }
+      ]
+    }
+  ]
+}
